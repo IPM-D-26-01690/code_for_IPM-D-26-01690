@@ -1,6 +1,6 @@
 # DHHO and S2MHHO Code
 
-This code accompanies manuscript IPM-D-26-01690R1 (Paper Title: Balancing Diagnostic Accuracy and Medical Costs via Dual-Path Swarm Intelligence-Based Feature Selection). It contains the two proposed feature-selection algorithms, S2MHHO and DHHO. Moreover, CKD is included only as a small example dataset for checking that the code runs.
+This code accompanies manuscript IPM-D-26-01690. It contains the two proposed feature-selection algorithms, S2MHHO and DHHO. Moreover, CKD is included only as a small example dataset for checking that the code runs.
 
 ## Package contents
 
@@ -36,7 +36,7 @@ python Algorithm/DHHO.py
 python Algorithm/S2MHHO.py
 ```
 
-Both scripts use CKD, a population size of 8, 100 iterations, and an one-versus-one RBF SVM (`C=1.0`). Results are written to `Results/DHHO/` and `Results/S2MHHO/`.
+Both scripts use CKD, a population size of 8, 100 iterations, and a one-versus-one RBF SVM (`C=1.0`). Results are written to `Results/DHHO/` and `Results/S2MHHO/`.
 
 `CKD.csv` has no header. Its last column is the class label and the preceding 24 columns are features. `CKD-cost.csv` contains one cost per feature in the same order.
 
